@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Dear Sister!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            overflow-x: hidden;
+        }
+        h1 {
+            margin-top: 50px;
+            font-size: 3em;
+            position: relative;
+        }
+        p {
+            margin: 20px auto;
+            font-size: 1.2em;
+            width: 80%;
+            line-height: 1.6;
+        }
+        .heart {
+            font-size: 5em;
+            margin: 20px 0;
+            animation: heartbeat 1s infinite;
+        }
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        .inspiration {
+            margin: 30px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+            font-size: 1.2em;
+        }
+        button {
+            padding: 15px 30px;
+            background: #ff4757;
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 10px;
+            margin: 20px 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #ff6b6b;
+        }
+        .scroll-button {
+            background: #1e90ff;
+        }
+        button.scroll-button:hover {
+            background: #4682b4;
+        }
+        .emoji-decoration {
+            font-size: 2em;
+            position: absolute;
+            animation: float 3s infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .emoji1 { top: 10%; left: 5%; animation-delay: 0.2s; }
+        .emoji2 { top: 20%; left: 90%; animation-delay: 0.4s; }
+        .emoji3 { top: 50%; left: 15%; animation-delay: 0.6s; }
+        .emoji4 { top: 70%; left: 85%; animation-delay: 0.8s; }
+        .emoji5 { top: 90%; left: 50%; animation-delay: 1s; }
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday Aashna, My Sister! 🎉</h1>
+    <div class="heart">❤️</div>
+    <p>Dear NEET Warrior, you are the best sister I have ever got. You are the only girl I ever trusted. I’m so proud to have you as my sister. Your dreams of becoming a doctor are just a step away—believe in yourself because I do! 🎂🌟</p>
+    
+    <div class="inspiration">
+        <p>🎯 "Hardships often prepare ordinary people for an extraordinary destiny." - C.S. Lewis</p>
+        <p>💪 "Dream big, work hard, stay focused, and surround yourself with good people."</p>
+    </div>
+    
+    <p>Remember, no matter what life throws your way, you have the strength to overcome it. Today is your day to shine brighter than ever! 🌟💖</p>
+    
+    <button onclick="playMessage()">🎵 Play My Birthday Wish</button>
+    <button class="scroll-button" onclick="scrollPage()">🔽 Scroll Down</button>
+    
+    <!-- Background Music -->
+    <audio id="bg-music" autoplay loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-inspire.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Decorations -->
+    <div class="emoji-decoration emoji1">🎉</div>
+    <div class="emoji-decoration emoji2">🎂</div>
+    <div class="emoji-decoration emoji3">🎁</div>
+    <div class="emoji-decoration emoji4">🌟</div>
+    <div class="emoji-decoration emoji5">🎈</div>
+
+    <script>
+        function playMessage() {
+            alert("Happy Birthday! Keep chasing your dreams and remember, you're deeply loved! 💖🎂");
+        }
+
+        function scrollPage() {
+            window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
+        }
+    </script>
+</body>
+</html>

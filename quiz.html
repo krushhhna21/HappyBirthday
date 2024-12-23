@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(to right, #1e3c72, #2a5298); /* BMW-themed gradient */
+            color: #fff;
+        }
+        .container {
+            margin: 50px auto;
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+        .question {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .options button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            background: #007bb5; /* BMW blue */
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .options button:hover {
+            background: #005f8a;
+        }
+        .score {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        #submitQuiz {
+            display: none;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            background: #ff4757;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        #submitQuiz:hover {
+            background: #e63946;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BMW Quiz</h1>
+        <div id="quiz">
+            <p class="question">Loading question...</p>
+            <div class="options"></div>
+        </div>
+        <p class="score"></p>
+        <button id="submitQuiz">Submit Quiz</button>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

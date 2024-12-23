@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            color: #fff;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        .locked-box {
+            width: 150px;
+            height: 150px;
+            margin: 20px auto;
+            background: url('https://img.icons8.com/emoji/452/wrapped-gift.png') no-repeat center center;
+            background-size: contain;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        .button {
+            background: #ff6b6b;
+            padding: 15px 30px;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #ff4757;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday!</h1>
+        <p>Unlock your surprises!</p>
+        <div class="locked-box"></div>
+        <button class="button" onclick="startJourney()">Tap to Begin</button>
+    </div>
+
+    <script>
+        function startJourney() {
+            alert("Get ready for your surprises!");
+            window.location.href = "quiz.html";
+        }
+    </script>
+</body>
+</html>
