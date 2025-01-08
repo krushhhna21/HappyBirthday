@@ -106,7 +106,7 @@ function checkAnswer(selected) {
 }
 
 document.getElementById("submitQuiz").addEventListener("click", () => {
-    alert("Congratulations! You’ve completed the quiz,  questions thode hard the.");
+    alert("Congratulations! You’ve completed the quiz.");
     window.location.href = "birthday-wish.html";
 });
 
